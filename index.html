@@ -1,391 +1,491 @@
-<!doctype html>
-<html lang="en" data-theme="light" data-retro="off">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steffy Raj Soni - Product Manager</title>
-    <meta
-      name="description"
-      content="Steffy Raj Soni - Product Manager. Building data-driven products with crisp strategy, real-time systems, and measurable outcomes."
-    />
-    <meta property="og:title" content="Steffy Raj Soni - Product Manager" />
-    <meta
-      property="og:description"
-      content="Portfolio featuring product experience, side quests, and outcome-driven execution."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://example.com" />
-    <meta property="og:image" content="https://example.com/og-image.jpg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="site-header" id="top">
-      <nav class="nav" aria-label="Primary">
-        <a class="logo" href="#hero" aria-label="Go to top">
-          <span class="logo-icon">SRS</span>
-        </a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          Menu
-        </button>
-        <div class="nav-links" id="navLinks">
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#experience" class="nav-link">Experience</a>
-          <a href="#side-quests" class="nav-link">Side Quests</a>
-          <a href="#toolkit" class="nav-link">Toolkit</a>
-          <a href="#testimonials" class="nav-link">Testimonials</a>
-          <a href="#contact" class="nav-link">Contact</a>
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <span class="toggle-icon" aria-hidden="true">☀️</span>
-          </button>
-        </div>
-      </nav>
-    </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <span id="themeIcon">🌙</span>
+    </div>
 
-    <main>
-      <section id="hero" class="hero">
-        <div class="hero-grid">
-          <div class="hero-text">
-            <p class="eyebrow">Product Manager · Bengaluru, India</p>
-            <h1>Steffy Raj Soni</h1>
-            <p class="hero-role">Outcome-first PM with a bias for shipping.</p>
-            <div class="hero-divider"></div>
-            <p class="hero-description">
-              Proactive Product Manager with 8 years of experience in enhancing
-              real-time booking interfaces and CRM integrations. Reduced onboarding
-              turnaround by 40% and increased contract closure rates by 35% through
-              automation and real-time lifecycle tracking. Interested in modular
-              contract management, analytics, and process optimization.
-            </p>
-            <div class="hero-actions">
-              <a class="btn primary" href="#" id="downloadResume">
-                Download Resume <span class="micro">(coming soon)</span>
-              </a>
-              <a class="btn secondary" href="mailto:steffyrajsoni@gmail.com">
-                Email Me
-              </a>
-              <button class="btn ghost" id="copyEmail">Copy email</button>
-            </div>
-            <div class="hero-badges">
-              <span class="badge">🎯 Strategy & Roadmaps</span>
-              <span class="badge">⚡ Automation</span>
-              <span class="badge">📈 Growth & Retention</span>
-              <span class="badge">🔎 Discovery</span>
-              <span class="badge">📊 Analytics</span>
-              <span class="badge">🤝 Stakeholders</span>
-            </div>
-          </div>
-          <div class="hero-stats">
-            <div class="stat-card">
-              <span class="stat-number">40%</span>
-              <span class="stat-label">Faster onboarding turnaround</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">35%</span>
-              <span class="stat-label">Higher contract closures</span>
-            </div>
-            <div class="stat-card">
-              <span class="stat-number">₹100 Cr+</span>
-              <span class="stat-label">Assets managed</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section">
-        <div class="section-header">
-          <span class="section-label">About</span>
-          <h2 class="section-title">The product POV</h2>
-          <p class="section-description">
-            My approach blends crisp problem framing, measurable outcomes, and a
-            clear delivery cadence. I like sharp hypotheses, clean experiments, and
-            dashboards that actually answer questions.
-          </p>
-        </div>
-        <div class="about-grid">
-          <div class="about-card">
-            <h3>Product OS</h3>
-            <ul>
-              <li>North Star alignment with OKRs</li>
-              <li>Discovery-led backlog grooming</li>
-              <li>Experimentation with clean baselines</li>
-              <li>Relentless iteration and retros</li>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">SR</div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-          </div>
-          <div class="about-card">
-            <h3>Contact Snapshot</h3>
-            <p><strong>Location:</strong> Bengaluru, Karnataka, India</p>
-            <p><strong>Email:</strong> steffyrajsoni@gmail.com</p>
-            <p><strong>Phone:</strong> +91-7999252932</p>
-            <p>
-              <strong>LinkedIn:</strong>
-              <a href="https://www.linkedin.com/in/steffyraj" target="_blank" rel="noreferrer">
-                linkedin.com/in/steffyraj
-              </a>
-            </p>
-            <p>
-              <strong>Peerlist:</strong>
-              <a href="https://peerlist.io/steffyraj" target="_blank" rel="noreferrer">
-                peerlist.io/steffyraj
-              </a>
-            </p>
-          </div>
         </div>
-      </section>
+    </nav>
 
-      <section id="skills" class="section alt">
-        <div class="section-header">
-          <span class="section-label">Skills</span>
-          <h2 class="section-title">Core competencies</h2>
-          <p class="section-description">
-            Strategic thinking meets execution. User empathy meets business metrics.
-          </p>
+    <section class="hero">
+        <div class="hero-text">
+            <div class="hero-intro">
+                <div class="hero-greeting">Hi, I'm</div>
+                <h1 class="hero-name">Steffy Raj Soni</h1>
+                <div class="hero-divider"></div>
+                <div class="hero-role">
+                    <span class="role-label">Product Manager</span>
+                </div>
+            </div>
+
+            <p class="hero-description">
+                Transforming user pain points into delightful features. Obsessed with conversion funnels, retention curves, and building 0→1 products that users actually want.
+            </p>
+
+            <div class="hero-badges">
+                <div class="badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>0→1 Builder</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">🎯</span>
+                    <span>PMF Hunter</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">📈</span>
+                    <span>Growth Hacker</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">⚡</span>
+                    <span>Funnel Optimizer</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">🎨</span>
+                    <span>UX Advocate</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">📊</span>
+                    <span>Data-Driven</span>
+                </div>
+            </div>
+
+            <a href="#" class="hero-cta" id="downloadResume">
+                <span>📄</span>
+                <span>Download Resume</span>
+            </a>
         </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Years Shipping Products</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">$10M+</div>
+                <div class="stat-label">ARR Impact Delivered</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2,500+</div>
+                <div class="stat-label">Users Onboarded</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-section">
+        <div class="section-header">
+            <div class="section-label">Tech Stack</div>
+            <h2 class="section-title">Tools I work with daily</h2>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-item">Figma</div>
+            <div class="tech-item">FigJam</div>
+            <div class="tech-item">Whimsical</div>
+            <div class="tech-item">Miro</div>
+            <div class="tech-item">SQL (Basic)</div>
+            <div class="tech-item">HubSpot</div>
+            <div class="tech-item">Jira</div>
+            <div class="tech-item">Confluence</div>
+            <div class="tech-item">Azure DevOps</div>
+            <div class="tech-item">GitHub</div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="section-header">
+            <div class="jargon-badge">🎯 Wearing all the hats</div>
+            <div class="section-label">Core Competencies</div>
+            <h2 class="section-title">What I bring to the table</h2>
+            <p class="section-description">
+                Strategic thinking meets execution. User empathy meets business metrics.
+            </p>
+        </div>
+
         <div class="skills-grid">
-          <div class="skill-card" style="--skill-color: var(--accent)">
-            <h3>Strategic Prioritization</h3>
-            <p>RICE, ICE scoring, impact mapping, OKR alignment.</p>
-          </div>
-          <div class="skill-card" style="--skill-color: var(--pink)">
-            <h3>Data & Insights</h3>
-            <p>SQL, cohort analysis, A/B testing, funnel optimization.</p>
-          </div>
-          <div class="skill-card" style="--skill-color: var(--purple)">
-            <h3>Product Design</h3>
-            <p>User research, prototyping, journey mapping, usability tests.</p>
-          </div>
-          <div class="skill-card" style="--skill-color: var(--cyan)">
-            <h3>Stakeholder Management</h3>
-            <p>Cross-functional leadership, exec comms, roadmap planning.</p>
-          </div>
-          <div class="skill-card" style="--skill-color: var(--orange)">
-            <h3>Technical Fluency</h3>
-            <p>APIs, CI/CD workflows, system architecture, dev collaboration.</p>
-          </div>
-          <div class="skill-card" style="--skill-color: var(--green)">
-            <h3>Go-to-Market</h3>
-            <p>Launch strategy, onboarding optimization, growth loops.</p>
-          </div>
-        </div>
-      </section>
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">🎯</span>
+                    <h3 class="skill-title">Strategic Prioritization</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-item">RICE Framework</div>
+                    <div class="skill-item">ICE Scoring</div>
+                    <div class="skill-item">Impact Mapping</div>
+                    <div class="skill-item">Feature Backlog Management</div>
+                    <div class="skill-item">OKR Alignment</div>
+                </div>
+            </div>
 
-      <section id="experience" class="section">
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">📊</span>
+                    <h3 class="skill-title">Data Analytics</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-item">SQL Queries</div>
+                    <div class="skill-item">Cohort Analysis</div>
+                    <div class="skill-item">A/B Testing</div>
+                    <div class="skill-item">Funnel Optimization</div>
+                    <div class="skill-item">Retention Metrics</div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">🎨</span>
+                    <h3 class="skill-title">Product Design</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-item">User Research</div>
+                    <div class="skill-item">Journey Mapping</div>
+                    <div class="skill-item">Wireframing</div>
+                    <div class="skill-item">Prototyping</div>
+                    <div class="skill-item">Usability Testing</div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">🤝</span>
+                    <h3 class="skill-title">Stakeholder Management</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-item">Cross-functional Leadership</div>
+                    <div class="skill-item">Executive Communication</div>
+                    <div class="skill-item">Roadmap Planning</div>
+                    <div class="skill-item">Conflict Resolution</div>
+                    <div class="skill-item">Team Alignment</div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">⚙️</span>
+                    <h3 class="skill-title">Technical Fluency</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-item">API Documentation</div>
+                    <div class="skill-item">System Architecture</div>
+                    <div class="skill-item">CI/CD Workflows</div>
+                    <div class="skill-item">Technical Debt Assessment</div>
+                    <div class="skill-item">Developer Collaboration</div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-header">
+                    <span class="skill-icon">🚀</span>
+                    <h3 class="skill-title">Go-to-Market</h3>
+                </div>
+                <div class="skill-list">
+                    <div class="skill-item">Launch Strategy</div>
+                    <div class="skill-item">Product Positioning</div>
+                    <div class="skill-item">User Acquisition</div>
+                    <div class="skill-item">Onboarding Optimization</div>
+                    <div class="skill-item">Growth Loops</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work" class="section">
         <div class="section-header">
-          <span class="section-label">Experience</span>
-          <h2 class="section-title">Where I made impact</h2>
+            <div class="jargon-badge">📦 Shipped & Delivered</div>
+            <div class="section-label">Professional Experience</div>
+            <h2 class="section-title">Where I've made an impact</h2>
         </div>
 
-        <div class="company-block">
-          <div class="company-header">
-            <div class="company-logo workspace-logo">🏢</div>
-            <div>
-              <h3>BHIVE Workspace</h3>
-              <p class="company-tenure">Apr 2024 – Present · Bengaluru</p>
+        <!-- BHIVE Workspace -->
+        <div class="company-section">
+            <div class="company-header">
+                <div class="company-logo workspace-logo">🏢</div>
+                <div class="company-info">
+                    <h3>BHIVE Workspace</h3>
+                    <div class="company-tenure">Apr 2024 – Present • 10+ months</div>
+                </div>
             </div>
-          </div>
-          <div class="company-grid">
-            <div class="role-card" style="--role-color: var(--accent)">
-              <h4>Infinity Platform</h4>
-              <p class="role-meta">Product Manager · Feb 2025 – Present</p>
-              <ul>
-                <li>Designed BookMyShow-style seat booking with dynamic DXF parsing.</li>
-                <li>Integrated HubSpot CRM; onboarding turnaround down 40%.</li>
-                <li>Built modular contract lifecycle system + templates.</li>
-                <li>Contract prep reduced from 3 days to 3 hours.</li>
-                <li>Sales velocity dashboards and pipeline forecasting.</li>
-                <li>Contract closure up 35% via automation.</li>
-              </ul>
+
+            <div class="products-grid">
+                <!-- Infinity Product -->
+                <div class="product-card" style="--product-color: var(--accent);">
+                    <div class="product-header">
+                        <span class="product-icon">♾️</span>
+                        <h4 class="product-title">Infinity Platform</h4>
+                    </div>
+                    <div class="product-role">Product Manager • Feb 2025 – Present</div>
+                    <div class="product-achievements">
+                        <div class="achievement">Designed BookMyShow-style seat booking with dynamic DXF parsing for real-time workspace mapping</div>
+                        <div class="achievement">Integrated HubSpot CRM with auto-sync, reducing onboarding by 40%</div>
+                        <div class="achievement">Built modular contract lifecycle management system</div>
+                        <div class="achievement">Reduced contract prep from 3 days to 3 hours (95% error reduction)</div>
+                        <div class="achievement">Developed BI dashboards for sales velocity and MRR tracking</div>
+                        <div class="achievement">Increased contract closure by 35% through automation</div>
+                    </div>
+                </div>
+
+                <!-- BHIVE ALTs Product -->
+                <div class="product-card" style="--product-color: var(--green);">
+                    <div class="product-header">
+                        <span class="product-icon">💎</span>
+                        <h4 class="product-title">BHIVE ALTs (Investments)</h4>
+                    </div>
+                    <div class="product-role">Product Manager • Apr 2024 – Feb 2025</div>
+                    <div class="product-achievements">
+                        <div class="achievement">Launched fintech platform managing ₹100 Cr+ in asset leasing</div>
+                        <div class="achievement">Eliminated spreadsheet chaos across 5+ departments</div>
+                        <div class="achievement">Prevented ₹50L+ in losses through intelligent alerts</div>
+                        <div class="achievement">Built investor portal with transaction history and vault</div>
+                        <div class="achievement">Automated payout engine with dynamic TDS calculation</div>
+                        <div class="achievement">Delivered KYC compliance with eSign integration</div>
+                    </div>
+                </div>
             </div>
-            <div class="role-card" style="--role-color: var(--green)">
-              <h4>BHIVE ALTs (Investments)</h4>
-              <p class="role-meta">Product Manager · Apr 2024 – Feb 2025</p>
-              <ul>
-                <li>Launched platform managing ₹100 Cr+ in asset leasing.</li>
-                <li>Eliminated spreadsheets across 5+ departments.</li>
-                <li>Prevented ₹50L+ losses with alerts.</li>
-                <li>Built investor portal + automated payouts.</li>
-                <li>KYC compliance with audit trails.</li>
-              </ul>
-            </div>
-          </div>
         </div>
 
-        <div class="company-block">
-          <div class="company-header">
-            <div class="company-logo hr-logo">👥</div>
-            <div>
-              <h3>Keka Technologies</h3>
-              <p class="company-tenure">May 2018 – Mar 2024 · Hyderabad</p>
+        <!-- Keka Technologies -->
+        <div class="company-section">
+            <div class="company-header">
+                <div class="company-logo hr-logo">👥</div>
+                <div class="company-info">
+                    <h3>Keka Technologies</h3>
+                    <div class="company-tenure">May 2018 – Mar 2024 • 6 years</div>
+                </div>
             </div>
-          </div>
-          <div class="company-grid single">
-            <div class="role-card" style="--role-color: var(--orange)">
-              <h4>HR Management Platform</h4>
-              <p class="role-meta">Product Consultant</p>
-              <ul>
-                <li>Migrated 2,500+ clients to new billing model ($10M+ uplift).</li>
-                <li>Shipped FLSA compliance and global attendance policies.</li>
-                <li>95%+ CSAT and 30% fewer support tickets.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section id="side-quests" class="section alt">
+            <div class="products-grid" style="grid-template-columns: 1fr;">
+                <div class="product-card" style="--product-color: var(--orange);">
+                    <div class="product-header">
+                        <span class="product-icon">💼</span>
+                        <h4 class="product-title">HR Management Platform</h4>
+                    </div>
+                    <div class="product-role">Product Consultant • May 2018 – Mar 2024</div>
+                    <div class="product-achievements">
+                        <div class="achievement">Migrated 2,500+ B2B clients to new billing model ($10M+ ARR uplift)</div>
+                        <div class="achievement">Reduced churn by 15% through improved UX</div>
+                        <div class="achievement">Shipped FLSA compliance and global attendance policies</div>
+                        <div class="achievement">Achieved 95%+ CSAT with 30% fewer support tickets</div>
+                        <div class="achievement">Built self-serve knowledge base for user autonomy</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
         <div class="section-header">
-          <span class="section-label">Side Quests</span>
-          <h2 class="section-title">Hypothesis-driven explorations</h2>
-          <p class="section-description">
-            Testing product ideas and validating market opportunities.
-          </p>
+            <div class="jargon-badge">🧪 Side quests</div>
+            <div class="section-label">Experiments & Research</div>
+            <h2 class="section-title">Hypothesis-driven explorations</h2>
+            <p class="section-description">
+                Testing product ideas and validating market opportunities
+            </p>
         </div>
+
         <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-header">
-              <span class="project-emoji">💸</span>
-              <h3>Personal Finance App</h3>
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-emoji">💸</span>
+                    <h3 class="project-title">Personal Finance App</h3>
+                </div>
+                <div class="project-meta">
+                    <div class="project-section">
+                        <div class="project-label">Challenge</div>
+                        <p class="project-text">Users lack real-time insights into spending patterns, making it difficult to save effectively</p>
+                    </div>
+                    <div class="project-section">
+                        <div class="project-label">Hypothesis</div>
+                        <p class="project-text">AI-powered categorization can increase user savings by 45%</p>
+                    </div>
+                    <div class="project-section">
+                        <div class="project-label">Approach</div>
+                        <p class="project-text">User interviews • JTBD framework • Competitive analysis • Prototyping • Usability testing</p>
+                    </div>
+                </div>
             </div>
-            <p><strong>Challenge:</strong> Users lack real-time spending insights.</p>
-            <p><strong>Hypothesis:</strong> Smart categorization lifts savings by 45%.</p>
-            <p><strong>Approach:</strong> JTBD, interviews, prototyping, usability tests.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-header">
-              <span class="project-emoji">🛵</span>
-              <h3>Blipso Tip Platform</h3>
-            </div>
-            <p><strong>Challenge:</strong> No seamless tipping for delivery partners.</p>
-            <p><strong>Hypothesis:</strong> QR tipping drives 85% repeat tips.</p>
-            <p><strong>Approach:</strong> Journey mapping, MVP testing, payments.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-header">
-              <span class="project-emoji">⭐</span>
-              <h3>Flipkart Review Growth</h3>
-            </div>
-            <p><strong>Challenge:</strong> Low review engagement.</p>
-            <p><strong>Hypothesis:</strong> Gamification drives 180% review growth.</p>
-            <p><strong>Approach:</strong> Incentive tests, funnel optimization.</p>
-          </article>
-          <article class="project-card">
-            <div class="project-header">
-              <span class="project-emoji">🎬</span>
-              <h3>Netflix Subscription Lift</h3>
-            </div>
-            <p><strong>Challenge:</strong> Trial-to-paid drop-off.</p>
-            <p><strong>Hypothesis:</strong> Personalized onboarding lifts conversion 28%.</p>
-            <p><strong>Approach:</strong> Pricing experiments, social proof tests.</p>
-          </article>
-        </div>
-      </section>
 
-      <section id="toolkit" class="section">
-        <div class="section-header">
-          <span class="section-label">Toolkit</span>
-          <h2 class="section-title">Tools I work with</h2>
-        </div>
-        <div class="toolkit-grid">
-          <span class="tool">Figma</span>
-          <span class="tool">FigJam</span>
-          <span class="tool">Whimsical</span>
-          <span class="tool">Miro</span>
-          <span class="tool">SQL (Basic)</span>
-          <span class="tool">HubSpot</span>
-          <span class="tool">Jira</span>
-          <span class="tool">Confluence</span>
-          <span class="tool">Azure DevOps</span>
-          <span class="tool">GitHub</span>
-        </div>
-      </section>
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-emoji">🛵</span>
+                    <h3 class="project-title">Blend — Tip Platform</h3>
+                </div>
+                <div class="project-meta">
+                    <div class="project-section">
+                        <div class="project-label">Challenge</div>
+                        <p class="project-text">No seamless digital tipping for delivery partners</p>
+                    </div>
+                    <div class="project-section">
+                        <div class="project-label">Hypothesis</div>
+                        <p class="project-text">Frictionless QR tipping can facilitate ₹2L+ tips with 85% repeat rate</p>
+                    </div>
+                    <div class="project-section">
+                        <div class="project-label">Approach</div>
+                        <p class="project-text">Partner interviews • Journey mapping • Payment integration • MVP testing</p>
+                    </div>
+                </div>
+            </div>
 
-      <section id="testimonials" class="section alt">
-        <div class="section-header">
-          <span class="section-label">Testimonials</span>
-          <h2 class="section-title">What teammates say</h2>
-        </div>
-        <div class="testimonial-grid">
-          <article class="testimonial">
-            <p>
-              “Steffy turns complex requirements into simple, elegant solutions.
-              Her data-driven approach and user empathy are unmatched.”
-            </p>
-            <div class="testimonial-author">
-              <span class="avatar">AK</span>
-              <div>
-                <strong>Arun Kumar</strong>
-                <span>Engineering Lead @ BHIVE</span>
-              </div>
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-emoji">⭐</span>
+                    <h3 class="project-title">Flipkart Review System</h3>
+                </div>
+                <div class="project-meta">
+                    <div class="project-section">
+                        <div class="project-label">Challenge</div>
+                        <p class="project-text">Low review engagement results in weak trust signals</p>
+                    </div>
+                    <div class="project-section">
+                        <div class="project-label">Hypothesis</div>
+                        <p class="project-text">Gamification can drive 180% review growth (4.2 → 4.6 rating)</p>
+                    </div>
+                    <div class="project-section">
+                        <div class="project-label">Approach</div>
+                        <p class="project-text">Behavioral analysis • Incentive testing • A/B experiments • Funnel optimization</p>
+                    </div>
+                </div>
             </div>
-          </article>
-          <article class="testimonial">
-            <p>
-              “Working with Steffy improved our time-to-market and stakeholder
-              alignment. She keeps the product narrative crystal clear.”
-            </p>
-            <div class="testimonial-author">
-              <span class="avatar">PM</span>
-              <div>
-                <strong>Priya Menon</strong>
-                <span>VP Product @ Keka</span>
-              </div>
-            </div>
-          </article>
-          <article class="testimonial">
-            <p>
-              “She ships fast, iterates faster, and always backs decisions with
-              data. A rare mix of craft and execution.”
-            </p>
-            <div class="testimonial-author">
-              <span class="avatar">RS</span>
-              <div>
-                <strong>Rahul Sharma</strong>
-                <span>Design Lead @ BHIVE</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
 
-      <section id="contact" class="section">
-        <div class="section-header">
-          <span class="section-label">Contact</span>
-          <h2 class="section-title">Let’s connect</h2>
-          <p class="section-description">Open to PM roles, consulting, or coffee chats.</p>
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-emoji">🎬</span>
+                    <h3 class="project-title">Netflix Growth Strategy</h3>
+                </div>
+                <div class="project-meta">
+                    <div class="project-section">
+                        <div class="project-label">Challenge</div>
+                        <p class="project-text">Low trial-to-paid conversion due to unclear value prop</p>
+                    </div>
+                    <div class="project-section">
+                        <div class="project-label">Hypothesis</div>
+                        <p class="project-text">Personalized onboarding can achieve 28% lift and 65% trial→paid rate</p>
+                    </div>
+                    <div class="project-section">
+                        <div class="project-label">Approach</div>
+                        <p class="project-text">Funnel analysis • Personalization engine • Social proof testing • Pricing experiments</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <div class="jargon-badge">💬 Social proof</div>
+            <div class="section-label">Testimonials</div>
+            <h2 class="section-title">What teammates say</h2>
+            <p class="section-description">
+                Feedback from people I've collaborated with
+            </p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p class="testimonial-text">Steffy has an incredible ability to turn complex requirements into simple, elegant solutions. Her data-driven approach and user empathy make her invaluable to any product team.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">AK</div>
+                    <div>
+                        <div class="author-name">Arun Kumar</div>
+                        <div class="author-role">Engineering Lead @ BHIVE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">Working with Steffy was transformative for our product. She reduced our time-to-market and increased user satisfaction through continuous iteration. Her stakeholder management skills are top-notch.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PM</div>
+                    <div>
+                        <div class="author-name">Priya Menon</div>
+                        <div class="author-role">VP Product @ Keka</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <p class="testimonial-text">Steffy's ability to balance user needs with business goals is exceptional. She ships fast, iterates faster, and always has data to back her decisions.</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">RS</div>
+                    <div>
+                        <div class="author-name">Rahul Sharma</div>
+                        <div class="author-role">Design Lead @ BHIVE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-header">
+            <div class="section-label">Education</div>
+            <h2 class="section-title">Academic foundation</h2>
+        </div>
+
+        <div class="education-card">
+            <div class="education-icon">🎓</div>
+            <div class="education-degree">B.E. Computer Science</div>
+            <div class="education-school">Shri Shankracharya Group of Institution, Bhilai</div>
+            <div class="education-year">2014 – 2018</div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-header">
+            <div class="section-label">Get in Touch</div>
+            <h2 class="section-title">Let's connect</h2>
+            <p class="section-description">
+                Open to PM roles, consulting, or coffee chats about products
+            </p>
+        </div>
+
         <div class="contact-grid">
-          <div class="contact-item">
-            <h4>Email</h4>
-            <p>steffyrajsoni@gmail.com</p>
-          </div>
-          <div class="contact-item">
-            <h4>Phone</h4>
-            <p>+91-7999252932</p>
-          </div>
-          <div class="contact-item">
-            <h4>Location</h4>
-            <p>Bengaluru, India</p>
-          </div>
-          <div class="contact-item">
-            <h4>LinkedIn</h4>
-            <p>linkedin.com/in/steffyraj</p>
-          </div>
-        </div>
-      </section>
-    </main>
+            <div class="contact-item">
+                <div class="contact-label">Email</div>
+                <div class="contact-value">steffyrajsoni@gmail.com</div>
+            </div>
 
-    <footer class="footer">
-      <p>© 2026 Steffy Raj Soni. Built with intention.</p>
+            <div class="contact-item">
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">+91 7999252932</div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Bengaluru, India</div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-label">LinkedIn</div>
+                <div class="contact-value">linkedin.com/in/steffyraj</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Steffy Raj Soni. Built with intention.</p>
     </footer>
 
-    <div class="sparkle-layer" id="sparkleLayer" aria-hidden="true"></div>
-
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
